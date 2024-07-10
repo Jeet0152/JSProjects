@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="header">Click on the Image</div>
+        <div class="image_gallery" id="image_gallery">
+            <img src="assets/image1.jpg" alt="flower" onclick="displayBig('image1')">
+            <img src="assets/image2.jpg" alt="panda" onclick="displayBig('image2')">
+            <img src="assets/image3.jpg" alt="tiger" onclick="displayBig('image3')">
+            <img src="assets/image4.jpg" alt="galaxy" onclick="displayBig('image4')">
+        </div>
+        <div id="show_big"></div>
+    </div>
+    <script>
+        const result = document.getElementById("show_big")
+
+            const displayBig = (imagesrc) => {
+
+                result.innerHTML = `<img src="/assets/${imagesrc}.jpg" alt="">`
+            }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

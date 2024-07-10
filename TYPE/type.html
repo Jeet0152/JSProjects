@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Text Changing</title>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+      </head>
+
+      <body>
+        <div class="container">
+          <h2 class="mt-4">Type any Text</h2>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="inputText"
+              class="form-control"
+              placeholder="Enter your text here"
+              oninput="processText()"
+            />
+          </div>
+
+          
+
+          <div id="results" class="mt-4">
+            <p><strong>Lower Case:</strong></p>
+            <p id="lowercase" class="lead"></p>
+
+            <p><strong>Upper Case:</strong></p>
+            <p id="uppercase" class="lead"></p>
+
+            <p><strong>Trim Data:</strong></p>
+            <p id="trimData" class="lead"></p>
+          </div>
+        </div>
+        <script src="type.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
